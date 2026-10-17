@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #ea580c;
+  --color-brand-dark: #c2410c;
+  --color-brand-soft: #fff7ed;
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+}
+
+body {
+  background: #fafafa;
+  color: #18181b;
+}
+
+/* Hide scrollbars on horizontal category tabs but keep them scrollable. */
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+}
